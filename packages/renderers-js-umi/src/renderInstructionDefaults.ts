@@ -120,7 +120,8 @@ export function renderInstructionDefaults(
                     }
                     return [];
                 });
-
+                
+                interfaces.add('eddsa');
                 return render(`context.eddsa.findPda(${pdaProgram}, [${pdaSeeds.join(', ')}])`);
             }
 
